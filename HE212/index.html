@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,900&display=swap" rel="stylesheet"> 
+    <script src="https://kit.fontawesome.com/0829d49e72.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="first project.css">
+    <title>car webswite</title>
+    <style>
+        *{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family:Arial, Helvetica, sans-serif;
+    text-align: center;    
+    
+}
+
+
+main{
+    width: 100%;
+    margin: 0px auto;
+    border: 1px solid;
+    display: grid;
+    grid-template-rows: 643px 640px 370px 300px 250px 400px;
+    grid-template-columns: repeat(2, 449px) 445px;
+    grid-gap: 01px;
+    
+}
+
+
+.x1{
+    grid-column: 1/-1;
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url(images/Hmr.jpg);
+    background-position:center;
+    background-size: cover;      
+}
+
+.n1{
+    
+
+    position: fixed;
+    top: 0px;
+    
+}
+
+.n1{
+    height: 80px;
+    display: flex;
+    margin-left: 57%;
+    margin-top: 4.3%;
+}
+
+
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-left: 60px;
+    
+}
+
+nav ul li a{
+    text-decoration: none;
+    color:antiquewhite;
+    font-size: 20px;
+    cursor: pointer;
+    display: inline;
+}
+
+
+nav ul li a:hover{
+    opacity: 0.5;
+    color: #000;
+}
+
+
+h1{
+    margin: 0px;
+    padding: 0px;
+    position: absolute ;
+    top: 35px;
+    left: 50px;
+    transform: translateY(-50) ;
+    color: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3));
+    font-size: 45px;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 0.0.5em;
+    font-style: bold;
+    opacity: 0.3;
+    cursor: default;
+    
+}
+h1 span{
+    display: inline-block;
+    animation: animate 1s linear forwards;
+
+}
+
+@keyframes animate{
+    0%{
+        opacity: 0;
+        transform: rotateY(90deg);
+        filter: blur(10px);
+    }
+
+    100%{
+        opacity: 1;
+        transform: rotateY(0deg);
+        filter: blur(0px);
+    }
+}
+
+
+h1 span:nth-child(1){
+    animation-delay: 0.25s;
+
+}
+
+h1 span:nth-child(2){
+    animation-delay: 0.50s;
+    
+}
+
+h1 span:nth-child(3){
+    animation-delay: 0.75s;
+    
+}
+
+h1 span:nth-child(4){
+    animation-delay: 1s;
+    
+}
+
+h1 span:nth-child(5){
+    animation-delay: 1.25s;
+    
+}
+
+h1 span:nth-child(6){
+    animation-delay: 1.50s;
+    
+}
+
+h1 span:nth-child(7){
+    animation-delay: 1.75s;
+    
+}
+
+h1 span:nth-child(8){
+    animation-delay: 2s;
+    
+}
+
+h1 span:nth-child(9){
+    animation-delay: 2.25s;
+    
+}
+
+h1 span:nth-child(10){
+    animation-delay: 2.50s;
+    
+}
+
+h1 span:nth-child(11){
+    animation-delay: 2.75s;
+    
+}
+
+h1 span:nth-child(12){
+    animation-delay: 3s;
+    
+}
+
+h1 span:nth-child(13){
+    animation-delay: 3.25s;
+    
+}
+
+h1 span:nth-child(14){
+    animation-delay: 3.50s;
+    
+}
+
+h1 span:nth-child(15){
+    animation-delay: 4s;
+    
+}
+
+h1 span:nth-child(16){
+    animation-delay: 4.25s;
+
+}
+
+
+/*.nxt{
+    position: absolute;
+    font-size: 55px;
+    font-family: Arial, Helvetica, sans-serif;
+    
+    
+    margin-left: 03%;
+    margin-top: 30%;
+    color: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3));
+    opacity: 0.5;
+    
+}*/
+
+
+.explore{
+    position: absolute;
+    text-decoration:none;
+    color: #fff;
+    font-size: 24px;
+    border: solid 2px #fff;
+    padding: 12px 40px;
+    margin-top: 540px;
+    margin-left: -622px;
+    border-radius: 50px;
+}
+
+
+.explore:hover{
+    opacity: 0.6;
+    text-transform: lowercase;
+    color: #000;
+}
+
+
+
+
+
+
+.x2{
+    grid-column: 1/2;
+    
+   background: white;
+   
+}
+
+
+
+.bx1{
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    font-style: normal;
+    font-family: 'Poppins', sans-serif;
+    top: 25px;
+    position: relative;
+}
+
+.card1{
+    width: 200px;
+    height: 230px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 15px 25px ;
+    box-sizing: border-box;
+    box-shadow: 6px 6px 10px ;
+    cursor: pointer;
+    background-image: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.1)), url(images/2k24card1.jpg) ;
+    background-position:center;
+    background-size: cover;
+    margin: 45px 08px;
+    transition: transfrom 1s;
+}
+
+
+.card2{
+    width: 200px;
+    height: 230px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 15px 25px ;
+    box-sizing: border-box;
+    box-shadow: 6px 6px 10px ;
+    cursor: pointer;
+    background-image:linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.1)),url(images/card2.jpg) ;
+    background-position:center;
+    background-size: cover;
+    margin: 20px 05px;
+    transition: transfrom 1s;
+}
+
+
+.card3{
+    width: 200px;
+    height: 230px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 15px 25px ;
+    box-sizing: border-box;
+    box-shadow: 6px 6px 10px ;
+    cursor: pointer;
+    background-image: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.1)), url(images/card3.jpg) ;
+    background-position:center;
+    background-size: cover;
+    margin: 20px 05px;
+}
+
+
+.card4{
+    width: 200px;
+    height: 230px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 15px 25px ;
+    box-sizing: border-box;
+    box-shadow: 6px 6px 10px ;
+    cursor: pointer;
+    background-image: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.1)), url(images/card4.jpg) ;
+    background-position:center;
+    background-size: cover;
+    margin: 20px 05px;
+}
+
+
+.pcard{
+    text-align: center;
+    text-decoration: solid;
+    top: 165px;
+    position: relative;
+    font-weight: bold;
+    font-size: 17px;
+    color:whitesmoke;
+    text-shadow: -8px -8px 10px black;
+}
+
+
+.card1:hover{
+    transform: translateY(15px);   
+    opacity: 0.8;
+}
+
+.card2:hover{
+    transform: translateY(15px);   
+    opacity: 0.8;
+}
+
+.card3:hover{
+    transform: translateY(-15px);   
+    opacity: 0.8;
+}
+
+.card4:hover{
+    transform: translateY(-15px);   
+    opacity: 0.8;
+}
+
+
+
+
+
+
+
+
+
+
+
+.x3{
+    grid-column: 2/3;
+
+}
+
+
+.x4{
+    background: white;
+    grid-column: 3/4;
+    grid-row: 2/4;
+    color:black;
+
+}
+
+.ats{
+    width: 437px;
+    height: 1010px;
+    overflow: auto;
+    margin-top: 22px;
+    
+}
+
+.ap{
+    height: 300px;
+    width: 410px;
+
+}
+
+
+.x5{background-color: white;
+   grid-column: 1/3;
+   ; 
+}
+
+.v2{
+    padding: 0px;
+    margin: 0px;
+    height: 370px;
+    width: 900px;
+    object-fit: cover;
+}
+
+.x6{background-color: blue;
+    grid-column: 1/-1;
+}
+.x7{
+    grid-column: 1/-1;
+}
+
+
+.x8{background-color: #485460;
+    grid-column: 1/-1;
+    color: #fff;
+}
+
+.footer_logo{
+    text-align: left;
+    position: relative;
+    top: 25px;
+    left: 10px;
+    color: #000;
+    font-size: 25px;
+    text-shadow: 2px 2px 4px #fff;
+}
+
+.gmc_logo{
+    text-align: right;
+    position: relative;
+    top: -20px;
+    right: 10px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 35px;
+    font-weight:bold;
+    color: #EA2027;
+    text-shadow: 4px 4px 6px #000;
+}
+
+.info{
+    position: relative;
+    display: flex;
+    justify-content:space-around;
+    margin-top: 30px;
+    font-size: 17px;
+    letter-spacing: 0.1em;    
+    color: #000;
+    text-shadow: 6px -6px 10px #fff;
+}
+
+
+.main_menu{
+    font-size: 20px;
+    cursor: pointer;
+}
+
+
+.social_media i{
+    position:relative;
+    text-align: center;
+    color: blue;
+    margin-right:69px ;
+    margin-top: 67px;
+    padding: 0px 5px;
+    font-size: 30px;
+    cursor: pointer;
+    text-shadow: 2px 2px 4px #fff; ;
+}
+
+    </style>
+
+
+</head>
+<body>
+    <main>
+        <div class="x1">
+            <div class="navbar"> 
+                <section>
+                    <h1 class="logo">
+                        <span>E</span>
+                        <span>L</span>
+                        <span>E</span>
+                        <span>C</span>
+                        <span>T</span>
+                        <span>R</span>
+                        <span>I</span>
+                        <span>C</span>
+                        <span> </span>
+                        <span> </span>
+                        <span>H</span>
+                        <span>U</span>
+                        <span>M</span>
+                        <span>M</span>
+                        <span>E</span>
+                        <span>R</span>
+                    </h1>
+                </section>    
+                
+                    <nav class="n1">
+                        <ul>
+                            <li><a href="">HOME</a></li>
+                            <li><a href="">SUPPORT</a></li>
+                            <li><a href="">BLOG</a></li>
+                            <li><a href="">ABOUT</a></li> 
+                        </ul>
+                    </nav>
+                   
+                </div>
+                
+            
+               
+            
+           <div> <a class="explore" href="https://www.caranddriver.com/gmc/hummer-ev" target="_blank">EXPLORE</a> </div>      
+            
+               
+            </div>
+        </div>
+
+        <div class="x2">
+            <p class="bx1">What's New for 2022  </p>
+            
+            <div class="card1">
+                <p class="pcard">Range, Charging, and Battery Life.</p>
+            </div>
+            <div class="card2">
+                <p class="pcard">2022 Hummer F-150 Lightning</p>
+            </div>
+            <br>
+            <div class="card3">
+                <p class="pcard">2022 GMC Hummer EV SUT</p>
+            </div>
+            <div class="card4">
+                <p class="pcard">EV Motor, Power, and Performance</p>
+            </div>
+        
+
+    </div>
+
+
+
+
+
+
+
+
+
+        <div class="x3">
+            <p class="bx1">GMC Hummer EV 2024 SUV</p>
+            
+            <div class="card1">
+                <p class="pcard">Range, Charging, and Battery Life.</p>
+            </div>
+            <div class="card2">
+                <p class="pcard">2022 Hummer F-150 Lightning</p>
+            </div>
+            <br>
+            <div class="card3">
+                <p class="pcard">2022 GMC Hummer EV SUT</p>
+            </div>
+            <div class="card4">
+                <p class="pcard">EV Motor, Power, and Performance</p>
+            </div>
+        </div>
+
+
+
+
+
+        
+
+        <div class="x4">
+            <div class="ats"> <p> <h2>The Hummer's 40-Year Journey From Military Hero to Electrified Future Truck </h2><img class="ap" src="images/mlt.jpg" alt="HUMMER">
+            <br><br>
+            By the late 1970s, the U.S. military needed to replace its traditional jeeps and its other light tactical vehicles with a new breed of machine that could do it all. And in 1979, the Army came up with specs for something bigger—much bigger—than Willys Overland’s original machine. 
+            Called the High Mobility Multi-Purpose Wheeled Vehicle (HMMWV or simply Humvee), the proposal would kickstart a competition for the military’s next do-anything workhorse. The preliminary design work began that year with the first engineering prototype vehicle completed by July 1980. Two years later, AM General delivered 11 prototypes to the Army in competition with other prototypes from General Dynamics and Teledyne.
+            <br><br><br>
+            <h2>The HMMWV Was Almost...A Lambo?</h2>
+            
+            <img class="ap" src="images/lambo.png" alt="HUMMER">
+            <br><br>
+            AM General wasn’t the only company eyeing a lucrative U.S. military contract in the late 1970s. Lamborghini wanted a piece of the action, but instead of doing all the heavy lifting itself, the Italian supercar builder farmed out some of the tech for a light tactical vehicle to Mobility Technology International (MTI) in San Jose, California.
+            The vehicle, known as the Lamborghini Cheetah, was up for the same contract as the Humvee. It shared a similar look as well as a four-wheeled independent suspension. Its design was right out of a G.I. Joe toy commercial. But instead of a ferocious Lamborghini V12, the two-wheel drive Cheetah used a 180 hp 5.9-liter Chrysler V8 mounted in the rear (like a classic dune buggy) and mated it to a three-speed automatic.
+            Lamborghini exhibited the Cheetah proudly at the 1977 Geneva Motor Show. But financial and legal troubles—for both MTI and Lamborghini—doomed the Cheetah. Why? Well, they allegedly borrowed design elements from an earlier military prototype, the 1972 FMC XR311. 
+            Lamborghini soon sold the Cheetah prototype to Michigan-based military contractor Teledyne. Teledyne reportedly built four more prototypes in order to continue the military bid process, but the Cheetah’s performance couldn’t match the Humvee’s capabilities.
+            <br><br><br>
+            <h2>The 1990-1991 Persian Gulf War put the Humvee on center stage, and the tough, battle-hardened rigs became a vehicular symbol of America’s might.</h2>
+            <img class="ap" src="images/mlh.jpg" alt="HUMMER">
+            <br><br>
+            Army Technology reported in 2014: "I think the HMMWV's iconic status resulted from its ability to reliably and consistently meet soldiers' changing needs, doing so with greater capabilities than its predecessor," explains Scott Davis, program executive officer at the U.S. Army's Combat Support and Combat Services Support, the office responsible for the Humvee. "There were certainly skeptics when we replaced the Jeep with the HMMWV, but today you find HMMWVs on every post and in numerous partner militaries around the world."In the 40 years since those first prototypes, AM General had built almost 300,000 Humvees.
+            <br><br><br>
+            <h2>Hummer Hits the Streets</h2>
+            <img class="ap" src="images/trm.jpg" alt="HUMMER">
+            <br><br>
+            Arnold Schwarzenegger wanted a Hummer. He wanted one badly.
+
+            The action movie megastar petitioned AM General to build a civilian version, and by July 1992, Schwarzenegger had one in his own garage with “Terminator” emblazoned on its flanks. Soon, the world would soon get its hands on the overpowered, overspec’d, overwhelming Hummer.In the June 1992 issue, Popular Mechanics spent a day pounding the truck through AM General’s test facilities and proclaimed: “For dirty work, this warlike roughneck has no peer.”
+                <br><br><br>
+            <h2>What Made the Hummer Such an Off-Road Beast?</h2>
+            <img class="ap" src="images/street.jpg" alt="HUMMER">
+                <br><br>  
+                “It's like putting a gorilla into a Brooks Brothers suit,” said Popular Mechanics in 1992. “He may look stylish, but he's still a gorilla, and he's not gonna let you forget it.”Although the Hummer excellent off-road, everyday highway driving was a different story. In 1995, Car and Driver tested the original 6,766-pound Hummer. It was not only painfully slow— reaching 60 mph in about 18 seconds—but it could only manage a paltry 9 mpg.“At 55 mph, you'll be rammed from the rear by traffic flowing 30 mph faster, although in the Hummer you won't feel the impact.”       
+        </p>
+        
+    </div>
+        </div>
+
+        <div class="x5">  <video class="v2" controls src="video/EH.mp4">
+            </video> </div>
+
+        <div class="x6">car catagory</div>
+
+        <div class="x7">registration form</div>
+
+        <div class="x8">
+            <footer>
+                <div>
+                    <h3 class="footer_logo"> FOLLOW US FOR THE LATEST REVOLUTIONARY NEWS <hr></h3>
+                    <p class="gmc_logo">
+                        GMC HUMMER EV
+                        </p>
+                </div>
+                <div>
+                   <div class="info">
+                       <div> 
+                          <p class="main_menu">INVENTORY</p> 
+                         <br>
+                         New Vehicles
+                         <br><br>
+                         Used Vehicles
+                         <br><br>
+                         Priced Under 15k
+                       </div>
+
+                       <div> 
+                          <p class="main_menu">SERVICE</p> 
+                         <br>
+                         Service Department
+                         <br><br>     
+                         Parts Department
+                         <br><br>  
+                         Parts Order Form 
+                       </div>
+
+                       <div> 
+                          <p class="main_menu">FINANCING</p>
+                         <br>  
+                         Finance Center
+                         <br><br>
+                         Banking Finance
+                         <br><br>
+                         Apply for Financing
+                       </div>
+                       
+                       <div> 
+                          <p class="main_menu">ABOUT</p> 
+                           <br>
+                           About Us
+                           <br><br>
+                           Contact Us
+                           <br><br>
+                           Careers
+                       </div>
+                    </div> 
+                    
+
+
+                       
+                    
+                </div>
+                <div class="social_media">
+                    <a href=""><i class="fab fa-facebook-f"></i></a>
+                    <a href=""><i class="fab fa-twitter"></i></a>
+                    <a href=""><i class="fab fa-instagram"></i></a>
+                    <a href=""><i class="fab fa-youtube"></i></a>
+                
+                
+                </div>
+
+
+
+
+
+
+            </footer>
+        </div>
+
+
+
+
+
+
+    </main>
+</body>
+</html>
